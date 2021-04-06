@@ -2,6 +2,7 @@ import React from "react";
 import home1 from "../img/home1.png";
 //Stiliziranje
 import styled from "styled-components";
+import { About, Description, Image, Hide } from "../styles";
 
 const AboutSection = () => {
   return (
@@ -34,36 +35,5 @@ const AboutSection = () => {
 };
 
 //komponente za stilizovanje
-const About = styled.div`
-  min-height: 80vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5rem 10rem;
-  color: white;
-`;
-
-const Description = styled.div`
-  flex: 1;
-  padding: 5rem;
-  h2 {
-    font-weight: lighter;
-  }
-`;
-
-const Image = styled.div`
-  flex: 1;
-  box-shadow: 2px 5px 30px white;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: 80vh;
-    object-fit: cover;
-  }
-`;
-
-const Hide = styled.div`
-  overflow: hidden;
-`;
 
 export default AboutSection;
